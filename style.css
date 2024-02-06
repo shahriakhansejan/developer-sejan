@@ -98,6 +98,9 @@ main{
 .what-i-do{
     margin-top: 130px;
 }
+#what-i-do-des{
+    padding: 30px 150px;
+}
 
 .skill{
     background: #FFFFFF;
@@ -200,4 +203,77 @@ input{
 }
 .contract img{
     padding-right: 10px;
+}
+
+
+/* Responsive */
+.hide{
+    display: none;
+}
+/* mobile device */
+@media screen and (max-width:576px) {
+    nav ul{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 20px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .header{
+        background-color: #fff8f3;
+        background-image: none;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        
+    }
+    .banner{
+        margin: 0px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #pro-pic{
+        width: 100%;
+        padding-top: 25px;
+    }
+    /* nav li{
+        list-style: none;
+        margin-left: 5px;
+    }   */
+    nav ul{
+        flex-direction: column;
+        align-items: first baseline;
+        gap: 10px;
+        padding: 15px 0;
+    }
+    .skill-container{
+        flex-direction: column;
+    }
+    #what-i-do-des{padding: 15px;}
+    .resume-content{
+        flex-direction: column;
+    }
+    .contract{
+        flex-direction: column;
+        gap: 10px;
+        padding: 3px 5px;
+    }
+    .contract input[type="text"], input[type="email"], textarea{
+        margin: 2px;
+        border: 0;
+        width: 95%;
+        padding: 2px 3px;
+    }
+    .about{
+        margin-top: 30px;
+        border-radius: 10px;
+        padding: 3px 5px;
+        text-align: center;
+    }
+    .aboutinfo-container{
+        flex-direction: column;
+    }
 }
